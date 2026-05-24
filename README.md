@@ -21,3 +21,13 @@ Those standalone repos were merged here to reduce clutter and keep frontend lear
 ## Status
 
 Keep this repo as a learning archive. Polished production-style frontend apps should live in their own focused repositories.
+
+## Navigation
+
+- HTML/CSS/JavaScript practice: `html-css-js-practice/`
+- React practice: `react-learning/`
+- Extraction plan: [docs/extraction-plan.md](docs/extraction-plan.md)
+
+## Archive Policy
+
+This repo should stay archived unless a new learning batch is being added. It supports growth history; it should not compete with polished app repos.
