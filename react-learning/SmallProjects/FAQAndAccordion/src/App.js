@@ -20,20 +20,20 @@ export default function App() {
 const questions = [
   {
     id: 1,
-    title: "Is this a good product?",
+    title: "What does this accordion project practice?",
     info:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui facere in labore maxime, assumenda iure sed tenetur alias omnis eveniet similique laborum, neque porro unde ducimus officiis animi vitae! Quidem."
+      "It practices component composition, reusable question data, and local open-close state for each FAQ item."
   },
   {
     id: 2,
-    title: "How much does it cost?",
+    title: "How should this be extended?",
     info:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui facere in labore maxime, assumenda iure sed tenetur alias omnis eveniet similique laborum, neque porro unde ducimus officiis animi vitae! Quidem."
+      "Add keyboard focus styles, allow only one item to stay open at a time, and move the FAQ content into a separate data file."
   },
   {
     id: 3,
-    title: "When can I get it?",
+    title: "Why keep this in an archive?",
     info:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui facere in labore maxime, assumenda iure sed tenetur alias omnis eveniet similique laborum, neque porro unde ducimus officiis animi vitae! Quidem."
+      "It shows early React practice without pretending to be a standalone production application."
   }
 ];

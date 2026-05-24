@@ -22,6 +22,8 @@ Those standalone repos were merged here to reduce clutter and keep frontend lear
 
 Keep this repo as a learning archive. Polished production-style frontend apps should live in their own focused repositories.
 
+Recent cleanup replaced obvious filler copy in representative HTML and React practice files so the archive reads as completed practice instead of unfinished starter material.
+
 ## Navigation
 
 - HTML/CSS/JavaScript practice: `html-css-js-practice/`
