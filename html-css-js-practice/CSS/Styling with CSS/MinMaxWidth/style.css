@@ -1,0 +1,10 @@
+#div1{
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    border: 2px solid blue;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: visible; */
+    overflow: auto;
+}

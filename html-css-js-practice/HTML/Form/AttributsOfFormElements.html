@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <div>
+                <label for="username">Email</label>
+            </div>
+            <div>
+                <!-- number, text, time, email, URL, range -->
+                <!-- min="10" max="100" step="10" -->
+                <input type="email" name="username" id="username" required placeholder="abc@example.com">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="country">Country</label>
+            </div>
+            <div>
+                <input type="country" name="country" value="India" required id="country" disabled>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="password">Password</label>
+            </div>
+            <div>
+                <input type="password" name="password" id="password" required>
+            </div>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>

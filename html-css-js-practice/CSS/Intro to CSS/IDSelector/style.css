@@ -1,0 +1,22 @@
+p{
+    /* color: orange; */
+    font-size: 20px;
+}
+h1{
+    font-size: 40px;
+}
+/* h4{
+    text-transform: uppercase;
+} */
+/* . for class */
+.uppercase{
+    text-transform: uppercase;
+}
+
+.cursive{
+    font-family: cursive;
+}
+/* # for id */
+#blog-title{
+    color: #314831;
+}

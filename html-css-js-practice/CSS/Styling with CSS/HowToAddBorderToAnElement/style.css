@@ -1,0 +1,36 @@
+#div1{
+    height: 4rem;
+    /* 200px */
+    /* 75vh viewport-height*/
+
+    width: 6rem;
+    /* 200px */
+    /* 100vw - viewport-width */
+
+    /* color defined by rgba */
+    /* background-color: rgba(125, 455, 56, 1); */
+    /* color defined by rgb */
+    /* background-color: rgb(25, 126, 65); */
+    /* color defined by name */
+    /* background-color: red; */
+    /* color defined by hsl */
+    /* background-color: hsl(240, 25%, 25%); */
+    /* color defined by hsla */
+    background-color: hsla(240, 25%, 25%, 0.5);
+    border-width: 2px 4px 6px 8px;
+    border-style: solid;
+    border-color: red;
+
+}
+
+#div2{
+    height: 50%;
+    width: 50%;
+    background-color: cyan;
+}
+
+#sample-text{
+    /* border:2px solid red; */
+    border-left: 4px solid red;
+    
+}

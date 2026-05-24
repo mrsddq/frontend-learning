@@ -1,0 +1,41 @@
+javascript interview topics:
+- 1let vs var vs const
+        var: Function-scoped, can be re-declared, hoisted with an initial value of undefined.
+        let: Block-scoped, no re-declaration, hoisted without initialization, allows reassignment.
+        const: Block-scoped, no re-declaration or reassignment, hoisted without initialization.
+- 2global scope vs block scope
+        Global Scope: Accessible anywhere in the program, and often persistent throughout the runtime.
+        Block Scope: Limited to the block where it is defined, enhancing modularity and preventing unwanted access from other parts of the program.
+- 3temporal dead zone (TDZ)
+        Key Characteristics of the Temporal Dead Zone (TDZ)
+        TDZ Duration: The TDZ for a variable begins at the start of its block scope (e.g., a function or {}) and ends when the variable is declared.
+
+        Variables Affected: Only let and const variables have a TDZ. Variables declared with var are not affected because they are hoisted and initialized with undefined at the top of their scope.
+
+        Purpose: The TDZ helps catch programming errors by preventing access to variables before they are declared, ensuring that variables are not used unintentionally before initialization.
+- 4hoisting
+        Function declarations: Fully hoisted; can be called before they are defined.
+        var variables: Hoisted and initialized with undefined; can be referenced before assignment, but will be undefined.
+        let and const variables: Hoisted but not initialized; exist in the TDZ, causing a ReferenceError if accessed before declaration.
+        Hoisting enables flexibility in organizing code but requires careful handling to avoid errors, especially with let and const.
+
+        Hoisting enables flexibility in organizing code but requires careful handling to avoid errors, especially with let and const.
+- 5closures
+        When a function is defined inside another function, it has access to the outer function's variables, creating a closure. Even after the outer function has finished executing, the inner function retains access to the outer function’s variables, preserving their values.
+- 6callbacks
+        A callback function is simply a function you pass to another function, and that other function will call (or "call back") when it’s done with its task. Callbacks are essential for handling asynchronous behavior in JavaScript, especially before the introduction of Promises and async/await.
+
+        Synchronous Callbacks: These are executed immediately within the containing function, such as in array methods (map, filter).
+        Asynchronous Callbacks: These are executed after an asynchronous operation completes, like with setTimeout, fetch, or other non-blocking tasks.
+
+        Callbacks allow functions to be passed as arguments and executed later, often making them invaluable for handling asynchronous behavior, event handling, and array processing in JavaScript. They form the basis for handling asynchronous workflows, although modern JavaScript now also uses Promises and async/await for improved readability.
+- 7promises , async /await , .then
+- 8map, filter , reduce
+- polyfills 
+- Map , sets 
+- array , object destructuring
+- arrow functions, anonymous functions , IIFE(immediately invoked function expression) and use cases
+- caching , memoization 
+- 'this' keyword for objects , functions , different functions
+- CRUD API 
+- fetch(), axios library 

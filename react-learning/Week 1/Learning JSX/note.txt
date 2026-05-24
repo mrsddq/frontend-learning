@@ -1,0 +1,30 @@
+Features of React
+    Declarative : JSX 
+    Component Based
+    Efficient fpr creating SPA because of VDOM
+
+what is JSX?
+JavaScript XML (JSX) is a syntax extention to JavaScript
+
+Why JSX?
+    React embraces the fact that rendering logic should be coupled with UI logic
+    Helpful as a visual aid when working with UI inside JavaScript
+    React seperates concerns instead of seperating technologies
+
+Embedding JavaScript in JSX : {}
+
+Expressions in JSX
+
+Rendering Arrays and Objects
+    const a = 10;
+    const a = [1,2,3,4,5];
+    const a = {
+        name = "Alexa
+    }
+    Map function to render array data.
+
+Assigning Unique Keys
+
+ Displaying Student's Information in a Table
+ Rendering Components based on a Condition
+ Conditional Rendering using Ternary Operator

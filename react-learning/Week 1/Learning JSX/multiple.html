@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>
+            Rendering Arrays and Objects
+        </title>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            function StudentsList(){
+
+                let students = [
+                    {
+                        name: "Laraib",
+                        age : 10,
+                        marks : 35
+                    },
+                    {
+                        name: "Talha",
+                        age : 100,
+                        marks : 75
+                    },
+                    {
+                        name: "Annu",
+                        age : 17,
+                        marks : 77
+                    }
+                ]
+
+            // Rendering Components based on a Condition
+
+                return(
+
+                    <>
+                        <h1>Student Details</h1>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Marks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {students.map((student,index)=>(
+                                    <tr key = {index}>
+                                        <td>{student.name}</td>
+                                        <td>{student.age}</td>
+                                        <td>{student.marks}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </>
+                )
+            }
+
+            function CarsList(){
+
+                let cars = ["BMW","Audi","Porche","Ford", "Volkswagen"];
+
+                return(
+                    <>
+                        <h1>List of Cars</h1>
+                        <ul>
+                            {cars.map((car,index) => (<li key = {index}>{car}</li>))}
+                        </ul>
+                    </>
+                )
+            }
+
+            function App(){
+                let showCars = true;
+
+                if(showCars){
+                    return <CarsList />
+                }
+                return(
+                    <>
+                        <StudentsList />
+                        <CarsList />
+
+                    </>
+                )
+            }
+
+            // Displaying Student's Information in a Table
+
+            // Assigning Unique Keys
+
+            const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+            rootElement.render(<App/>)
+        </script>
+    </body>
+</html>
