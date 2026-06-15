@@ -33,3 +33,5 @@ Recent cleanup replaced obvious filler copy in representative HTML and React pra
 ## Archive Policy
 
 This repo should stay archived unless a new learning batch is being added. It supports growth history; it should not compete with polished app repos.
+
+Next upgrade: extract one polished React project with screenshots, a live deployment URL, and a focused README.
