@@ -35,3 +35,19 @@ Recent cleanup replaced obvious filler copy in representative HTML and React pra
 This repo should stay archived unless a new learning batch is being added. It supports growth history; it should not compete with polished app repos.
 
 Next upgrade: extract one polished React project with screenshots, a live deployment URL, and a focused README.
+
+## Run and review
+
+The HTML/CSS/JavaScript examples can be served without installing Node dependencies:
+
+```bash
+python -m http.server 8000 --bind 127.0.0.1 --directory html-css-js-practice
+```
+
+Open http://127.0.0.1:8000/ and navigate to a lesson. Assets and links are relative to each lesson directory.
+
+Each React exercise has its own `package.json`; there is no root build or shared test suite. Several exercises use the historical `react-scripts` 4 toolchain. Their builds and external API integrations have not been verified on current runtimes; treat them as source examples until their dependencies, error handling, and tests are upgraded. A README cleanup is not evidence that every exercise runs.
+
+## Attribution
+
+The source repositories listed above, course references, image credits, and starter material are retained. This archive documents learning rather than claiming original authorship of a curriculum. For independently maintained application work, use the focused [e-commerce](https://github.com/mrsddq/e-commerce-web-app) and [social media](https://github.com/mrsddq/social-media-web-app) repositories; inspect their actual tests and scope separately.
