@@ -46,7 +46,7 @@ python -m http.server 8000 --bind 127.0.0.1 --directory html-css-js-practice
 
 Open http://127.0.0.1:8000/ and navigate to a lesson. Assets and links are relative to each lesson directory.
 
-Each React exercise has its own `package.json`; there is no root build or shared test suite. Several exercises use the historical `react-scripts` 4 toolchain. Their builds and external API integrations have not been verified on current runtimes; treat them as source examples until their dependencies, error handling, and tests are upgraded. A README cleanup is not evidence that every exercise runs.
+Six React app folders have their own `package.json`; the Week 1, Week 2, and Tasks materials are standalone HTML/JavaScript exercises, and there is no root build or shared test suite. Several exercises use the historical `react-scripts` 4 toolchain. Their builds and external API integrations have not been verified on current runtimes; treat them as source examples until their dependencies, error handling, and tests are upgraded. A README cleanup is not evidence that every exercise runs.
 
 ## Attribution
 
