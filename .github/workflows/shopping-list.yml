@@ -1,0 +1,30 @@
+name: Shopping list checks
+
+on:
+  push:
+    paths: ['react-learning/SmallProjects/ShoppingList/**', '.github/workflows/shopping-list.yml']
+  pull_request:
+    paths: ['react-learning/SmallProjects/ShoppingList/**', '.github/workflows/shopping-list.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  shopping-list:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: react-learning/SmallProjects/ShoppingList
+    env:
+      CI: 'true'
+      # The archived CRA 4 build uses Webpack 4.
+      NODE_OPTIONS: --openssl-legacy-provider
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --package-lock=false --no-audit --no-fund
+      - run: npm test -- --watchAll=false --runInBand
+      - run: npm run build
