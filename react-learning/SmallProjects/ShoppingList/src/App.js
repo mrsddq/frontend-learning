@@ -4,19 +4,16 @@ import { useState } from "react";
 export default function App() {
   const [items, setItems] = useState([]);
 
-  function onRemoveItem(itemToRemove) {
-    const newItems = items.filter((item) => {
-      return item !== itemToRemove;
-    });
-    setItems(newItems);
+  function onRemoveItem(indexToRemove) {
+    setItems((current) => current.filter((_, index) => index !== indexToRemove));
   }
 
   function onSubmit(event) {
     event.preventDefault();
     const form = event.target;
-    const input = form.item;
-    const newItems = [...items, input.value];
-    setItems(newItems);
+    const value = form.elements.namedItem("item").value.trim();
+    if (!value) return;
+    setItems((current) => [...current, value]);
     form.reset();
   }
 
@@ -29,6 +26,7 @@ export default function App() {
           <input
             type="text"
             name="item"
+            aria-label="New item"
             placeholder="Add a new item"
             required
           />
@@ -36,7 +34,7 @@ export default function App() {
         </form>
         <ul>
           {items.map((item, index) => (
-            <Item onRemoveItem={onRemoveItem} key={item + index} item={item} />
+            <Item onRemoveItem={() => onRemoveItem(index)} key={item + index} item={item} />
           ))}
         </ul>
       </div>
@@ -48,7 +46,7 @@ function Item({ item, onRemoveItem }) {
   return (
     <li>
       {item}
-      <button className="delete" onClick={() => onRemoveItem(item)}>
+      <button className="delete" aria-label={`Remove ${item}`} onClick={onRemoveItem}>
         x
       </button>
     </li>
